@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    
+}
+.main a{
+    text-decoration: none;
+    
+}
+.main a h1{
+    font-family: monospace;
+    text-align: center;
+
+}

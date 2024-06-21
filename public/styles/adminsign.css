@@ -1,0 +1,77 @@
+.f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px;
+    background: url("https://essentialsiteskills.co.uk/storage/app/uploads/public/609/26a/b11/thumb_3077_960_480_0_0_crop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+  label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  input,select{
+    outline: none;
+    color: rgb(38, 43, 43);
+    background: transparent;
+    padding: 5px;
+   
+    border: solid 2px gray;
+    width: 60%;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  
+  button{
+    background-color: rgb(21, 22, 27);
+    padding: 5px 10px;
+    font-size: 30px;
+    color: antiquewhite;
+    font-weight: 600;
+    width: 400px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+
+
+  }
+  button:hover{
+    background-color: rgb(147, 148, 150);
+    cursor: pointer;
+  }
+  
+  button:active{
+    color: aliceblue;
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: .3s ease-out;
+  }
+
+  form a{
+    font-size: 20px;
+    margin-left: 50px;
+    color: rgb(18, 10, 63);
+    font-weight: 600;
+
+  }

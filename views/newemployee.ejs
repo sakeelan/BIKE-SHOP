@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW EMPLOYEE PAGE</title>
+</head>
+<%- include('../views/partials/adminnav.ejs') %>
+
+
+<link rel="stylesheet" href="/styles/newemployee.css">
+<body>
+    <div class="apply">
+        <div class="mai">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/122101/yamaha-fz-x-right-side-view0.jpeg?isig=0&wm=2&q=80" alt="Los Angeles" class="d-block w-100">
+                  <div class="carousel-caption">
+                      <h1><%= h1  %></h1>
+                    <p>FZ Version3</p>
+                    </div>  
+              </div>
+        </div></div>
+
+        
+
+        <div class="main">
+            <form class="f" action="/employeedet" method="post"  novalidate>
+                
+                <input type="text" name="eid"  placeholder="EMPLOYEE ID" required>
+                <input type="text" name="ename" placeholder="EMPLOYEE NAME" required>
+        
+                <select name="gender"  class="package" >
+        
+        <option class="pack" value="">GENDER</option>
+        <option class="pack" value="PACKAGE 1">MALE</option>
+        <option class="pack" value="PACKAGE 2">FEMALE</option>
+        <input type="text" name="phone" placeholder="PHONE NO" required maxlength="10" required>
+
+        <input type="text" name="dep" placeholder="DEPARTMENT ROLE" >
+
+        <input type="text" name="salary" placeholder="SALARY"  class="total">
+               
+                
+                
+                <button>SUMBIT</button></div>
+            </form></div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATING EMPLOYEE PAGE</title>
+</head>
+<%- include('../views/partials/adminnav.ejs') %>
+
+
+<link rel="stylesheet" href="/styles/newemployee.css">
+<body>
+    <div class="apply">
+        <div class="mai">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/122101/yamaha-fz-x-right-side-view0.jpeg?isig=0&wm=2&q=80" alt="Los Angeles" class="d-block w-100">
+                  <div class="carousel-caption">
+                      <h1><%= h1  %></h1>
+                    <p>FZ Version3</p>
+                    </div>  
+              </div>
+        </div></div>
+
+        
+
+        <div class="main">
+            <form class="f" action="/success" method="post"  >
+                <label for="">GIVE YOUE PROFILE</label>
+                <input type="text" name="cname" value="" placeholder="YOUR NAME" required>
+                <input type="email" name="email" value="" placeholder="EMAIL ID" required>
+                <input type="text" name="address" value="" placeholder="ADDRESS" >
+
+                <input type="text" name="phone" value="" placeholder="PHONE NO" maxlength="10" required >
+<label for="">BIKE DETAILS</label>
+        <input type="text" name="bname" value="<%= bike.bname  %>" placeholder="BIKE NAME"  required>
+
+        <input type="text" name="model" value="<%= bike.model  %>" placeholder="BIKE MODEL" required>
+
+        <input type="date" name="date" value="" placeholder="DATE"  class="total" >
+        <input type="text" name="price" value="<%= bike.price  %>" placeholder="BIKE PRICE"  class="total" required>
+
+                
+                
+                <button>BUY</button></div>
+            </form></div>
+    
+</body>
+</html>

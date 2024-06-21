@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../jobportal"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bike shop"
+	}
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIEW FEEDBACK PAGE</title>
+</head>
+<%- include('../views/partials/adminnav.ejs') %>
+
+
+<link rel="stylesheet" href="/styles/viewfeedback.css">
+<body>
+    <div class="apply">
+        <div class="main">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/122101/yamaha-fz-x-right-side-view0.jpeg?isig=0&wm=2&q=80" alt="Los Angeles" class="d-block w-100">
+                  <div class="carousel-caption">
+                      <h1><%= h1  %></h1>
+                    <p>FZ Version3</p>
+                    </div>  
+              </div>
+
+
+        </div>
+
+        <br><br>
+        <table border="2px">
+            <thead>
+        <tr>
+            <th>SNO</th>
+            <th>CUSTOMER NAME</th>
+            <th>EMAIL ID</th>
+            <th>BIKES NAME</th>
+            <th>MODELS</th>
+            <th>STARS RATTING</th>
+            <th>COMPLAINTS</th>
+            <th>ACTION</th>
+        </tr>
+        
+            </thead>
+
+            <thead>
+<% feed.forEach((feed,index)=>{ %>
+    <tr>
+        <td><%= index+1 %></td>
+        <td> <%= feed.cname %></td>
+        <td> <%= feed.email %></td>
+        <td><%= feed.bname %></td>
+        <td><%= feed.model %></td>
+        <td><%= feed.star %></td>
+        <td><%= feed.complaint %></td>
+        <td><a href="/feeddelete/<%= feed._id  %>"  onclick="deletedata()"><i class="bi bi-trash3" style="background: transparent;" id="trash"   ></i></i></a>
+        </th>
+    </tr>
+
+<% }) %>
+            </thead>
+
+         
+        </table></div>
+</body>
+
+
+<br><br>
+
+    
+
+</html>
+
+    
+</body>
+</html>

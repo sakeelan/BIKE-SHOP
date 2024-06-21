@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD BIKES</title>
+</head>
+<%- include('../views/partials/adminnav.ejs') %>
+
+
+<link rel="stylesheet" href="/styles/addbike.css">
+<body>
+    <div class="apply">
+        <div class="mai">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/122101/yamaha-fz-x-right-side-view0.jpeg?isig=0&wm=2&q=80" alt="Los Angeles" class="d-block w-100">
+                  <div class="carousel-caption">
+                      <h1><%= h1  %></h1>
+                    <p>FZ Version3</p>
+                    </div>  
+              </div>
+        </div></div>
+
+        
+
+        <div class="main">
+            <form class="f" action="/newbike" method="post" novalidate>
+                
+                <input type="text" name="bname"  placeholder="BIKE NAME" required>
+                <input type="text" name="model" placeholder="MODEL NAME" required>
+
+                <select name="tyre"  class="package" >
+                    <option class="pack" >TYRES TYPE</option>
+                    <option class="pack" >NORMAL</option>
+                    <option class="pack" >TUBELESS</option> </select>              
+                
+                    <select name="brake"  class="package" >
+                        <option class="pack" >BRAKES</option>
+                        <option class="pack" >NORMAL</option>
+                        <option class="pack" >DISK</option>
+                        <option class="pack" >ABS</option> </select> 
+
+                        <select name="fuel"  class="package" >
+                            <option class="pack" >FUEL TYPE</option>
+                            <option class="pack" >PETROL</option>
+                            <option class="pack" >DIESEL</option>
+                             </select>             
+                    
+                    <input type="text" name="color" placeholder="COLOR" required maxlength="10" required>
+              
+                <input type="text" name="cc"  placeholder="SPEED CC" required>
+        
+        <input type="file" name="img" placeholder="BIKES IMAGE">
+                <input type="price" name="price" placeholder="PRICE" >
+                <div>
+                
+                <button>ADD TO SELL</button></div>
+            </form></div>
+    
+</body>
+</html>
